@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Animais e Plantas</title>
+	</head>
+	<style>
+		.active {
+			color: red;
+		}
+	</style>
+	<body id="content">
+	</body>
+	<script>
+		window.onload = () => {
+		
+			function buildDefault() {
+				document.getElementById("content").innerHTML = ''
+					+ '<h1>Animais e Plantas</h1>'
+					+ '<ul>'
+					+ '<li id="play_cotia">Cotia</li>'
+					+ '</ul>';
+				document.getElementById("play_cotia").onclick = () => executeSounds(
+					'Cotia',
+					'KAINGANG - Kysóg',
+					'macroje_kaingang_cotia.wav',
+					'XAVANTE - dzöhuru',
+					'macroje_xavante_cotia.wav'
+				);
+			}
+		
+			function executeSounds(title, firstText, firstSound, secondText, secondSound) {
+				document.getElementById("content").innerHTML = ''
+					+ '<h1>'+title+'</h1>'
+					+ '<ul>'
+					+ '<li>'
+					+ '<span id="text1">'+firstText+'</span>'
+					+ '<audio id="sound1"><source type="audio/wav" src="../../assets/music/animais_plantas/'+firstSound+'"></audio>'
+					+ '</li>'
+					+ '<li>'
+					+ '<span id="text2">'+secondText+'</span>'
+					+ '<audio id="sound2"><source type="audio/wav" src="../../assets/music/animais_plantas/'+secondSound+'"></audio>'
+					+ '</li>'
+					+ '</ul>';
+				const text1 = document.getElementById("text1");
+				const sound1 = document.getElementById("sound1");
+				const text2 = document.getElementById("text2");
+				const sound2 = document.getElementById("sound2");
+				setTimeout(() => {
+					text1.classList.add("active");
+					sound1.play();
+				}, 1000);
+				setTimeout(() => {
+					text1.classList.remove("active");
+				}, 3000);
+				setTimeout(() => {
+					text2.classList.add("active");
+					sound2.play();
+				}, 4000);
+				setTimeout(() => {
+					text2.classList.remove("active");
+				}, 6000);
+				setTimeout(() => {
+					buildDefault();
+				}, 7000);
+			}
+			
+			buildDefault();
+			
+		}
+
+	</script>
+</html>
