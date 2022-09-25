@@ -3,11 +3,28 @@
 	<head>
 		<title>Línguas Isoladas</title>
 	</head>
-	<body>
-		<h1>Línguas Isoladas</h1>
-		<ul>
-			<li>Vídeo Yaathê</li>
-			<li>Vídeo Guató</li>
-		</ul>
+	<body id="content">
 	</body>
+	<script src="../../js/video.js"></script>
+	<script>
+		window.onload = () => {
+			function buildDefault() {
+				document.getElementById("content").innerHTML = ''
+					+ '<h1>Línguas Isoladas</h1>'
+					+ '<ul>'
+					+ '<li id="play_video_yaathe">Vídeo Yaathê</li>'
+					+ '<li id="play_video_guato">Vídeo Guató</li>'
+					+ '</ul>';
+				document.getElementById("play_video_yaathe").onclick = () => executeVideo(
+					'../../assets/video/test.mp4',
+					buildDefault
+				);
+				document.getElementById("play_video_guato").onclick = () => executeVideo(
+					'../../assets/video/test.mp4',
+					buildDefault
+				);
+			}
+			buildDefault();
+		}
+	</script>
 </html>
