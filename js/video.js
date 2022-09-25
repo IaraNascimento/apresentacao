@@ -8,11 +8,10 @@ function executeVideo(video, buildDefault) {
 	movie.addEventListener('ended', handlerEnd, false);
 	const closeVideo = document.getElementById("closeVideo");
 	closeVideo.onclick = () => {
+		movie.pause();
 		buildDefault();
 	};
-	setTimeout(() => {
-		movie.play();
-	}, 1000);
+	movie.play();
     function handlerEnd(e) {
 		setTimeout(() => {
 			buildDefault();
