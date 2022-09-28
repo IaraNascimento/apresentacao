@@ -1,20 +1,53 @@
 
+html, body {
+	display: block;
+	width: 1920px;
+	height: 1080px;
+}
+
 body {
-	background-color: #F5F5F5;
 	font-family: Arial, sans-serif;
-	overflow: hidden;
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: cover;
 }
 
 h1 {
 	text-align: center;
-	font-size: 24px;
+	font-size: 1em;
 	color: purple;
+	font-weight: bold;
 	margin-bottom: 16px;
+	margin-top: 1%;
 }
 
 .active {
 	color: purple;
 	font-weight: bold;
+}
+
+#goback-btn {
+	top: 8px;
+    left: 1620px;
+    width: 145px;
+    height: 80px;
+}
+
+#home-btn {
+	top: 8px;
+    left: 1770px;
+    width: 140px;
+    height: 80px;
+}
+
+.navigate-btn {
+	position: absolute;
+    border: 1px solid white;
+    background-color: transparent;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
 }
 
 #closeVideo {
