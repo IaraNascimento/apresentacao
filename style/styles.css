@@ -22,12 +22,12 @@ h1 {
 }
 
 #play-list {
-	margin-top: 300px;
-	margin-left: 180px;
+	padding-top: 300px;
+	padding-left: 180px;
 }
 
 #play-list li {
-	opacity: .4;
+	opacity: .3;
 	color: white;
 	text-transform: uppercase;
 }
@@ -36,9 +36,12 @@ h1 {
 	opacity: 1;
 }
 
+#text2 {
+	padding-top: 120px;
+}
+
 .audio-title {
 	font-size: 160px;
-	margin-top: 120px;
 }
 
 .audio-subtitle {
