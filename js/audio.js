@@ -1,14 +1,16 @@
-function executeSounds(title, firstText, firstSound, secondText, secondSound, buildDefault) {
+function executeSounds(background, firstText, firstSubText, firstSound, secondText, secondSubText, secondSound, buildDefault) {
+	document.getElementById("content").style.backgroundImage = "url('" + background + "')";
 	document.getElementById("content").innerHTML = ''
-		+ '<h1>'+title+'</h1>'
-		+ '<ul>'
-		+ '<li>'
-		+ '<span id="text1">'+firstText+'</span>'
-		+ '<audio id="sound1"><source type="audio/wav" src="'+firstSound+'"></audio>'
+		+ '<ul id="play-list">'
+		+ '<li id="text1">'
+		+ '<div class="audio-title">' + firstText + '</div>'
+		+ '<div class="audio-subtitle">' + firstSubText + '</div>'
+		+ '<audio id="sound1"><source type="audio/wav" src="' + firstSound + '"></audio>'
 		+ '</li>'
-		+ '<li>'
-		+ '<span id="text2">'+secondText+'</span>'
-		+ '<audio id="sound2"><source type="audio/wav" src="'+secondSound+'"></audio>'
+		+ '<li id="text2">'
+		+ '<div class="audio-title">' + secondText + '</div>'
+		+ '<div class="audio-subtitle">' + secondSubText + '</div>'
+		+ '<audio id="sound2"><source type="audio/wav" src="' + secondSound + '"></audio>'
 		+ '</li>'
 		+ '</ul>';
 	const text1 = document.getElementById("text1");
@@ -33,4 +35,4 @@ function executeSounds(title, firstText, firstSound, secondText, secondSound, bu
 		buildDefault();
 	}, 7000);
 }
-			
+

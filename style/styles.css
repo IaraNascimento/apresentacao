@@ -21,9 +21,40 @@ h1 {
 	margin-top: 1%;
 }
 
-.active {
-	color: purple;
-	font-weight: bold;
+#play-list {
+	margin-top: 300px;
+	margin-left: 180px;
+}
+
+#play-list li {
+	opacity: .4;
+	color: white;
+	text-transform: uppercase;
+}
+
+#play-list li.active {
+	opacity: 1;
+}
+
+.audio-title {
+	font-size: 160px;
+	margin-top: 120px;
+}
+
+.audio-subtitle {
+	margin-top: 16px;
+	font-size: 48px;
+}
+
+#click-pointer {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -250px;
+	margin-left: -250px;
+	transform: rotateX(180deg);
+	width: 500px;
+	height: 500px;
 }
 
 #goback-btn {

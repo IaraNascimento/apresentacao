@@ -1,45 +1,53 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Animais e Plantas</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="../../style/reset.css" />
-		<link rel="stylesheet" href="../../style/styles.css" />
-	</head>
-	<body id="content">
-	</body>
-	<script src="../../js/audio.js"></script>
-	<script>
-		window.onload = () => {
-		
-			function buildDefault() {
-				document.getElementById("content").innerHTML = ''
-					+ '<h1>Animais e Plantas</h1>'
-					+ '<ul>'
-					+ '<li id="play_cotia">Cotia</li>'
-					+ '<li id="play_onca">Onça</li>'
-					+ '</ul>';
-				document.getElementById("play_cotia").onclick = () => executeSounds(
-					'Cotia',
-					'KAINGANG - Kysóg',
-					'../../assets/music/animais_plantas/macroje_kaingang_cotia.wav',
-					'XAVANTE - dzöhuru',
-					'../../assets/music/animais_plantas/macroje_xavante_cotia.wav',
-					buildDefault
-				);
-				document.getElementById("play_onca").onclick = () => executeSounds(
-					'Onça',
-					'KAINGANG - Mĩg',
-					'../../assets/music/animais_plantas/macroje_kaingang_onca.wav',
-					'XAVANTE - hu',
-					'../../assets/music/animais_plantas/macroje_xavante_onca.wav',
-					buildDefault
-				);
-			}
-		
-			buildDefault();
-			
+
+<head>
+	<title>Animais e Plantas</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="../../style/reset.css" />
+	<link rel="stylesheet" href="../../style/styles.css" />
+</head>
+
+<body id="content">
+</body>
+<script src="../../js/audio.js"></script>
+<script>
+	window.onload = () => {
+
+		function buildDefault() {
+			document.getElementById("content").style.backgroundImage = "";
+			document.getElementById("content").innerHTML = ''
+				+ '<h1>Animais e Plantas</h1>'
+				+ '<ul>'
+				+ '<li id="play_cutia">Cutia</li>'
+				+ '<li id="play_onca">Onça</li>'
+				+ '</ul>';
+			document.getElementById("play_cutia").onclick = () => executeSounds(
+				'../../assets/images/animais_plantas/cutia.png',
+				'Kysóg',
+				'KAINGANG',
+				'../../assets/music/animais_plantas/macroje_kaingang_cutia.wav',
+				'dzöhuru',
+				'XAVANTE',
+				'../../assets/music/animais_plantas/macroje_xavante_cutia.wav',
+				buildDefault
+			);
+			document.getElementById("play_onca").onclick = () => executeSounds(
+				'../../assets/images/animais_plantas/cutia.png',
+				'Mĩg',
+				'KAINGANG',
+				'../../assets/music/animais_plantas/macroje_kaingang_onca.wav',
+				'hu',
+				'XAVANTE',
+				'../../assets/music/animais_plantas/macroje_xavante_onca.wav',
+				buildDefault
+			);
 		}
 
-	</script>
+		buildDefault();
+
+	}
+
+</script>
+
 </html>
