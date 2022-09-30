@@ -1,4 +1,5 @@
 function executeVideo(video, buildDefault) {
+	document.getElementById("content").style.backgroundImage = "";
 	document.getElementById("content").innerHTML = ''
 		+ '<span id="closeVideo">fechar X</span>'
 		+ '<video id="movie">'

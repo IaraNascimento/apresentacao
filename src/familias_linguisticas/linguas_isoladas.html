@@ -1,33 +1,52 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Línguas Isoladas</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="../../style/reset.css" />
-		<link rel="stylesheet" href="../../style/styles.css" />
-	</head>
-	<body id="content">
-	</body>
-	<script src="../../js/video.js"></script>
-	<script>
-		window.onload = () => {
-			function buildDefault() {
-				document.getElementById("content").innerHTML = ''
-					+ '<h1>Línguas Isoladas</h1>'
-					+ '<ul>'
-					+ '<li id="play_video_yaathe">Vídeo Yaathê</li>'
-					+ '<li id="play_video_guato">Vídeo Guató</li>'
-					+ '</ul>';
-				document.getElementById("play_video_yaathe").onclick = () => executeVideo(
-					'../../assets/video/test.mp4',
-					buildDefault
-				);
-				document.getElementById("play_video_guato").onclick = () => executeVideo(
-					'../../assets/video/test.mp4',
-					buildDefault
-				);
-			}
-			buildDefault();
+
+<head>
+	<title>Línguas Isoladas</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="../../style/reset.css" />
+	<link rel="stylesheet" href="../../style/styles.css" />
+	<style>
+		#play_video_yaathe,
+		#play_video_guato {
+			top: 660px;
+			width: 300px;
+			height: 210px;
 		}
-	</script>
+
+		#play_video_yaathe {
+			left: 40px;
+		}
+
+		#play_video_guato {
+			left: 455px;
+		}
+	</style>
+</head>
+
+<body id="content">
+</body>
+<script src="../../js/video.js"></script>
+<script>
+	window.onload = () => {
+		function buildDefault() {
+			document.getElementById("content").style.backgroundImage = "url('../../assets/images/familias_linguisticas/FAMILIAS_ISOLADAS.png')";
+			document.getElementById("content").innerHTML = ''
+				+ '<a id="home-btn" class="navigate-btn" href="../home.html"></a>'
+				+ '<a id="goback-btn" class="navigate-btn" href="../familias_linguisticas.html"></a>'
+				+ '<span id="play_video_yaathe" class="navigate-btn"></span>'
+				+ '<span id="play_video_guato" class="navigate-btn"></span>';
+			document.getElementById("play_video_yaathe").onclick = () => executeVideo(
+				'../../assets/video/test.mp4',
+				buildDefault
+			);
+			document.getElementById("play_video_guato").onclick = () => executeVideo(
+				'../../assets/video/test.mp4',
+				buildDefault
+			);
+		}
+		buildDefault();
+	}
+</script>
+
 </html>

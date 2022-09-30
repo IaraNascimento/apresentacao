@@ -6,17 +6,46 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="../style/reset.css" />
 	<link rel="stylesheet" href="../style/styles.css" />
+	<style>
+		body {
+			background-image: url(../assets/images/home.png);
+		}
+
+		#familias_linguisticas,
+		#escrita_linguas_indigenas,
+		#regioes_multilingues,
+		#palavras_ilustradas {
+			width: 675px;
+			height: 100px;
+		}
+
+		#familias_linguisticas {
+			top: 385px;
+			left: 260px;
+		}
+
+		#escrita_linguas_indigenas {
+			top: 385px;
+			left: 985px;
+		}
+
+		#regioes_multilingues {
+			top: 590px;
+			left: 260px;
+		}
+
+		#palavras_ilustradas {
+			top: 590px;
+			left: 985px;
+		}
+	</style>
 </head>
 
 <body>
-	<iframe id="click-pointer" src="../assets/images/click.webp" frameBorder="0" allowFullScreen></iframe>
-	<ul>
-		<li><a href="familias_linguisticas.html">I. As Famílias Linguísticas</a></li>
-		<li><a href="escrita_linguas_indigenas.html">II. A Escrita das Línguas Indígenas</a></li>
-		<li><a href="regioes_multilingues.html">III. Regiões Multilíngues no Brasil</a></li>
-		<li><a href="palavras_ilustradas.html">IV. Palavras Ilustradas (Glossários)</a></li>
-	</ul>
+	<a id="familias_linguisticas" class="navigate-btn" href="familias_linguisticas.html"></a>
+	<a id="escrita_linguas_indigenas" class="navigate-btn" href="escrita_linguas_indigenas.html"></a>
+	<a id="regioes_multilingues" class="navigate-btn" href="regioes_multilingues.html"></a>
+	<a id="palavras_ilustradas" class="navigate-btn" href="palavras_ilustradas.html"></a>
 </body>
-<script src="../js/click.js"></script>
 
 </html>
