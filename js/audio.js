@@ -1,5 +1,7 @@
-function executeSounds(background, firstText, firstSubText, firstSound, secondText, secondSubText, secondSound, buildDefault) {
+function executeSounds(background, firstTextList, firstSubText, firstSound, secondTextList, secondSubText, secondSound, buildDefault) {
 	document.getElementById("content").style.backgroundImage = "url('" + background + "')";
+	const firstText = firstTextList[0] + (firstTextList[1]? '<span>ou</span>' + firstTextList[1] : '');
+	const secondText = secondTextList[0] + (secondTextList[1]? '<span>ou</span>' + secondTextList[1] : '');
 	document.getElementById("content").innerHTML = ''
 		+ '<ul id="play-list">'
 		+ '<li id="text1">'
