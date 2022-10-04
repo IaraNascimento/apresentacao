@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'DidactGothic-Regular';
+    src: url('DidactGothic-Regular.ttf') format('truetype');
+}
+
 html,
 body,
 #content,
@@ -9,7 +14,7 @@ body,
 }
 
 body {
-	font-family: Arial, sans-serif;
+	font-family: 'DidactGothic-Regular', Arial, sans-serif;
 	background-repeat: no-repeat;
 	background-position: left top;
 	background-size: cover;
@@ -23,6 +28,10 @@ h1 {
 	font-weight: bold;
 	margin-bottom: 16px;
 	margin-top: 40px;
+}
+
+li {
+	font-size: 40px;
 }
 
 #play-list {
@@ -46,6 +55,7 @@ h1 {
 
 .audio-title {
 	font-size: 160px;
+	font-weight: 600;
 }
 
 .audio-title span {
