@@ -21,13 +21,6 @@
 			height: 180px;
 			width: 305px;
 		}
-
-		#play_video_3 {
-			top: 850px;
-			left: 1580px;
-			height: 180px;
-			width: 305px;
-		}
 	</style>
 </head>
 
@@ -38,7 +31,7 @@
 
 <script>
 	localStorage.setItem('homeLocation', '../home.html');
-	localStorage.setItem('videoLocation', 'https://media.githubusercontent.com/media/IaraNascimento/apresentacao/master/assets/video/test.mp4');
+	localStorage.setItem('videoLocation', 'https://media.githubusercontent.com/media/IaraNascimento/apresentacao/master/assets/video/placeholder.mp4');
 </script>
 <script src="../../js/idle.js"></script>
 <script src="../../js/video.js"></script>
@@ -54,15 +47,11 @@
 				+ '<span id="play_video_3" class="navigate-btn"></span>'
 				+ '<a id="narrativas_indigenas" class="navigate-btn" href="narrativas_indigenas.html"></a>';
 			document.getElementById("play_video_1").onclick = () => executeVideo(
-				'https://media.githubusercontent.com/media/IaraNascimento/apresentacao/master/assets/video/test.mp4',
+				'https://media.githubusercontent.com/media/IaraNascimento/apresentacao/master/assets/video/alto_rio_negro_1.mp4',
 				buildDefault
 			);
 			document.getElementById("play_video_2").onclick = () => executeVideo(
-				'https://media.githubusercontent.com/media/IaraNascimento/apresentacao/master/assets/video/test.mp4',
-				buildDefault
-			);
-			document.getElementById("play_video_3").onclick = () => executeVideo(
-				'https://media.githubusercontent.com/media/IaraNascimento/apresentacao/master/assets/video/test.mp4',
+				'https://media.githubusercontent.com/media/IaraNascimento/apresentacao/master/assets/video/alto_rio_negro_2.mp4',
 				buildDefault
 			);
 		}
