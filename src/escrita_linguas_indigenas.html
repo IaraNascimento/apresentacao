@@ -3,12 +3,12 @@
 
 <head>
 	<title>II. A Escrita das Línguas Indígenas</title>
-	<meta charset="UTF-8"/>
+	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="../style/reset.css" />
 	<link rel="stylesheet" href="../style/styles.css" />
 	<style>
-		body {
+		#content {
 			background-image: url(../assets/images/escrita_linguas_indigenas.png);
 		}
 
@@ -22,20 +22,28 @@
 			left: 40px;
 			width: 335px;
 		}
-		
+
 		#aprendendo_escola {
 			left: 575px;
 			width: 355px;
 		}
-
 	</style>
 </head>
 
 <body>
-	<a id="goback-btn" class="navigate-btn" href="home.html"></a>
-	<a id="home-btn" class="navigate-btn" href="home.html"></a>
-	<a id="narrativas_indigenas" class="navigate-btn" href="escrita_linguas_indigenas/narrativas_indigenas.html"></a>
-	<a id="aprendendo_escola" class="navigate-btn" href="escrita_linguas_indigenas/aprendendo_escola.html"></a>
+	<main id="content">
+		<a id="goback-btn" class="navigate-btn" href="home.html"></a>
+		<a id="home-btn" class="navigate-btn" href="home.html"></a>
+		<a id="narrativas_indigenas" class="navigate-btn"
+			href="escrita_linguas_indigenas/narrativas_indigenas.html"></a>
+		<a id="aprendendo_escola" class="navigate-btn" href="escrita_linguas_indigenas/aprendendo_escola.html"></a>
+	</main>
 </body>
+
+<script>
+	localStorage.setItem('homeLocation', 'home.html');
+	localStorage.setItem('videoLocation', '../assets/video/test.mp4');
+</script>
+<script src="../js/idle.js"></script>
 
 </html>

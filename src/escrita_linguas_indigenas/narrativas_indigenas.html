@@ -3,12 +3,12 @@
 
 <head>
 	<title>Narrativas Indígenas</title>
-	<meta charset="UTF-8"/>
+	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="../../style/reset.css" />
 	<link rel="stylesheet" href="../../style/styles.css" />
 	<style>
-		body {
+		#content {
 			background-image: url(../../assets/images/escrita_linguas_indigenas/narrativas_indigenas.png);
 		}
 
@@ -22,9 +22,17 @@
 </head>
 
 <body>
-	<a id="goback-btn" class="navigate-btn" href="../escrita_linguas_indigenas.html"></a>
-	<a id="home-btn" class="navigate-btn" href="../home.html"></a>
-	<a id="aprendendo_escola" class="navigate-btn" href="aprendendo_escola.html"></a>
+	<main id="content">
+		<a id="goback-btn" class="navigate-btn" href="../escrita_linguas_indigenas.html"></a>
+		<a id="home-btn" class="navigate-btn" href="../home.html"></a>
+		<a id="aprendendo_escola" class="navigate-btn" href="aprendendo_escola.html"></a>
+	</main>
 </body>
+
+<script>
+	localStorage.setItem('homeLocation', '../home.html');
+	localStorage.setItem('videoLocation', '../../assets/video/test.mp4');
+</script>
+<script src="../../js/idle.js"></script>
 
 </html>

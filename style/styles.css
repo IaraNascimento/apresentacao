@@ -1,5 +1,8 @@
 html,
-body {
+body,
+#content,
+#movie,
+#current-movie {
 	display: block;
 	width: 1920px;
 	height: 1080px;
@@ -10,6 +13,7 @@ body {
 	background-repeat: no-repeat;
 	background-position: left top;
 	background-size: cover;
+	background-color: #9876FF;
 }
 
 h1 {
@@ -100,14 +104,28 @@ h1 {
 	position: absolute;
 	top: 16px;
 	right: 16px;
-	border-radius: 8;
 	border: 2px solid purple;
 	color: purple;
 	display: inline-block;
-	padding: 8px;
-	z-index: 1;
+	padding: 24px;
+	background-color: white;
+	font-size: 32px;
+	z-index: 3;
 }
 
-#movie {
-	width: 100%;
+#content,
+#movie,
+#current-movie {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#content {
+	z-index: 2;
+}
+
+#movie,
+#current-movie {
+	z-index: 1;
 }

@@ -3,20 +3,71 @@
 
 <head>
 	<title>Alto Rio Negro</title>
-	<meta charset="UTF-8"/>
+	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="../../style/reset.css" />
 	<link rel="stylesheet" href="../../style/styles.css" />
 	<style>
-		body {
-			background-image: url(../../assets/images/regioes_multilingues/regioes_multilingues_ALTO_RIO_NEGRO.png);
+		#play_video_1 {
+			top: 850px;
+			left: 570px;
+			height: 180px;
+			width: 305px;
+		}
+
+		#play_video_2 {
+			top: 850px;
+			left: 1072px;
+			height: 180px;
+			width: 305px;
+		}
+
+		#play_video_3 {
+			top: 850px;
+			left: 1580px;
+			height: 180px;
+			width: 305px;
 		}
 	</style>
 </head>
 
 <body>
-	<a id="goback-btn" class="navigate-btn" href="../regioes_multilingues.html"></a>
-	<a id="home-btn" class="navigate-btn" href="../home.html"></a>
+	<main id="content">
+	</main>
 </body>
+
+<script>
+	localStorage.setItem('homeLocation', '../home.html');
+	localStorage.setItem('videoLocation', '../../assets/video/test.mp4');
+</script>
+<script src="../../js/idle.js"></script>
+<script src="../../js/video.js"></script>
+<script>
+	window.onload = () => {
+		function buildDefault() {
+			document.getElementById("content").style.backgroundImage = "url('../../assets/images/regioes_multilingues/regioes_multilingues_ALTO_RIO_NEGRO.png')";
+			document.getElementById("content").innerHTML = ''
+				+ '<a id="goback-btn" class="navigate-btn" href="../regioes_multilingues.html"></a>'
+				+ '<a id="home-btn" class="navigate-btn" href="../home.html"></a>'
+				+ '<span id="play_video_1" class="navigate-btn"></span>'
+				+ '<span id="play_video_2" class="navigate-btn"></span>'
+				+ '<span id="play_video_3" class="navigate-btn"></span>'
+				+ '<a id="narrativas_indigenas" class="navigate-btn" href="narrativas_indigenas.html"></a>';
+			document.getElementById("play_video_1").onclick = () => executeVideo(
+				'../../assets/video/test.mp4',
+				buildDefault
+			);
+			document.getElementById("play_video_2").onclick = () => executeVideo(
+				'../../assets/video/test.mp4',
+				buildDefault
+			);
+			document.getElementById("play_video_3").onclick = () => executeVideo(
+				'../../assets/video/test.mp4',
+				buildDefault
+			);
+		}
+		buildDefault();
+	}
+</script>
 
 </html>

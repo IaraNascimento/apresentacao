@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Minha Família</title>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="../../style/reset.css" />
+	<link rel="stylesheet" href="../../style/styles.css" />
+</head>
+
+<body id="content">
+</body>
+<script src="../../js/audio.js"></script>
+<script>
+	window.onload = () => {
+
+		function buildDefault() {
+			document.getElementById("content").style.backgroundImage = "";
+			document.getElementById("content").innerHTML = ''
+				+ '<h1>Minha Família</h1>'
+				+ '<ul>'
+				+ '<li id="play_arvore">Arvore</li>'
+				+ '<li id="play_rio">Rio</li>'
+				+ '<li id="play_nuvem">Nuvem</li>'
+				+ '<li id="play_estrela">Estrela</li>'
+				+ '<li id="play_chuva">Chuva</li>'
+				+ '<li id="play_flor">Flor</li>'
+				+ '<li id="play_pedra">Pedra</li>'
+				+ '<li id="play_cachoeira">Cachoeira</li>'
+				+ '<li id="play_sol">Sol</li>'
+				+ '<li id="play_lua">Lua</li>'
+				+ '</ul>';
+			document.getElementById("play_arvore").onclick = () => executeSounds(
+				'../../assets/images/terra_ceu/arvore.png',
+				['haiko'],
+				'BANIWA',
+				'../../assets/music/terra_ceu/aruak_baniwa_arvore.wav',
+				['Tikôti'],
+				'TERENA',
+				'../../assets/music/terra_ceu/aruak_terena_arvore.wav',
+				buildDefault
+			);
+			document.getElementById("play_rio").onclick = () => executeSounds(
+				'../../assets/images/terra_ceu/rio.png',
+				['onipawa'],
+				'BANIWA',
+				'../../assets/music/terra_ceu/aruak_baniwa_rio.wav',
+				['Hûveo ke'],
+				'TERENA',
+				'../../assets/music/terra_ceu/aruak_terena_rio.wav',
+				buildDefault
+			);
+			document.getElementById("play_nuvem").onclick = () => executeSounds(
+				'../../assets/images/terra_ceu/nuvem.png',
+				['ittamana'],
+				'BANIWA',
+				'../../assets/music/terra_ceu/aruak_baniwa_nuvem.wav',
+				['Kapasí'],
+				'TERENA',
+				'../../assets/music/terra_ceu/aruak_terena_nuvem.wav',
+				buildDefault
+			);
+			document.getElementById("play_estrela").onclick = () => executeSounds(
+				'../../assets/images/terra_ceu/estrela.png',
+				['hiwirhi'],
+				'BANIWA',
+				'../../assets/music/terra_ceu/aruak_baniwa_estrela.wav',
+				['Hékere'],
+				'TERENA',
+				'../../assets/music/terra_ceu/aruak_terena_estrela.wav',
+				buildDefault
+			);
+			document.getElementById("play_chuva").onclick = () => executeSounds(
+				'../../assets/images/terra_ceu/chuva.png',
+				['iidza'],
+				'BANIWA',
+				'../../assets/music/terra_ceu/aruak_baniwa_chuva.wav',
+				['Úko'],
+				'TERENA',
+				'../../assets/music/terra_ceu/aruak_terena_chuva.wav',
+				buildDefault
+			);
+			document.getElementById("play_flor").onclick = () => executeSounds(
+				'../../assets/images/terra_ceu/flor.png',
+				['hipada'],
+				'BANIWA',
+				'../../assets/music/terra_ceu/aruak_baniwa_flor.wav',
+				['Hîu'],
+				'TERENA',
+				'../../assets/music/terra_ceu/aruak_terena_flor.wav',
+				buildDefault
+			);
+			document.getElementById("play_pedra").onclick = () => executeSounds(
+				'../../assets/images/terra_ceu/pedra.png',
+				['hiipa'],
+				'BANIWA',
+				'../../assets/music/terra_ceu/aruak_baniwa_pedra.wav',
+				["Mopô'i"],
+				'TERENA',
+				'../../assets/music/terra_ceu/aruak_terena_pedra.wav',
+				buildDefault
+			);
+			document.getElementById("play_cachoeira").onclick = () => executeSounds(
+				'../../assets/images/terra_ceu/cachoeira.png',
+				['kamoi'],
+				'BANIWA',
+				'../../assets/music/terra_ceu/aruak_baniwa_cachoeira.wav',
+				['Mbokotike'],
+				'TERENA',
+				'../../assets/music/terra_ceu/aruak_terena_cachoeira.wav',
+				buildDefault
+			);
+			document.getElementById("play_sol").onclick = () => executeSounds(
+				'../../assets/images/terra_ceu/sol.png',
+				['keeri'],
+				'BANIWA',
+				'../../assets/music/terra_ceu/aruak_baniwa_sol.wav',
+				['Káxe'],
+				'TERENA',
+				'../../assets/music/terra_ceu/aruak_terena_sol.wav',
+				buildDefault
+			);
+			document.getElementById("play_lua").onclick = () => executeSounds(
+				'../../assets/images/terra_ceu/lua.png',
+				['liiwi'],
+				'BANIWA',
+				'../../assets/music/terra_ceu/aruak_baniwa_lua.wav',
+				['Kohê'],
+				'TERENA',
+				'../../assets/music/terra_ceu/aruak_terena_lua.wav',
+				buildDefault
+			);
+		}
+
+		buildDefault();
+
+	}
+
+</script>
+
+</html>

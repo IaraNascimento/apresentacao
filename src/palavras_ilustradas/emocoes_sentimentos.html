@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Emoções e Sentimentos</title>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="../../style/reset.css" />
+	<link rel="stylesheet" href="../../style/styles.css" />
+</head>
+
+<body id="content">
+</body>
+<script src="../../js/audio.js"></script>
+<script>
+	window.onload = () => {
+
+		function buildDefault() {
+			document.getElementById("content").style.backgroundImage = "";
+			document.getElementById("content").innerHTML = ''
+				+ '<h1>Emoções e Sentimentos</h1>'
+				+ '<ul>'
+				+ '<li id="play_alegria">Alegria</li>'
+				+ '<li id="play_tristeza">Tristeza</li>'
+				+ '<li id="play_raiva">Raiva</li>'
+				+ '<li id="play_medo">Medo</li>'
+				+ '<li id="play_coragem">Coragem</li>'
+				+ '<li id="play_preguica">Preguiça</li>'
+				+ '<li id="play_calma">Calma</li>'
+				+ '<li id="play_gratidao">Gratidão</li>'
+				+ '<li id="play_fome">Fome</li>'
+				+ '<li id="play_sede">Sede</li>'
+				+ '</ul>';
+			document.getElementById("play_alegria").onclick = () => executeSounds(
+				'../../assets/images/emocoes_sentimentos/alegria.png',
+				["Eka'ti"],
+				'DAHSEAYE',
+				'../../assets/music/emocoes_sentimentos/tukano_dahseaye_alegria.wav',
+				['ʉse nire'],
+				'TUYUKA',
+				'../../assets/music/emocoes_sentimentos/tukano_tuyuka_alegria.wav',
+				buildDefault
+			);
+			document.getElementById("play_tristeza").onclick = () => executeSounds(
+				'../../assets/images/emocoes_sentimentos/tristeza.png',
+				["Bʉhʉ'awehti"],
+				'DAHSEAYE',
+				'../../assets/music/emocoes_sentimentos/tukano_dahseaye_tristeza.wav',
+				['wakũ petire'],
+				'TUYUKA',
+				'../../assets/music/emocoes_sentimentos/tukano_tuyuka_tristeza.wav',
+				buildDefault
+			);
+			document.getElementById("play_raiva").onclick = () => executeSounds(
+				'../../assets/images/emocoes_sentimentos/raiva.png',
+				["Wu'ah"],
+				'DAHSEAYE',
+				'../../assets/music/emocoes_sentimentos/tukano_dahseaye_raiva.wav',
+				['kuare'],
+				'TUYUKA',
+				'../../assets/music/emocoes_sentimentos/tukano_tuyuka_raiva.wav',
+				buildDefault
+			);
+			document.getElementById("play_medo").onclick = () => executeSounds(
+				'../../assets/images/emocoes_sentimentos/medo.png',
+				['Wuí'],
+				'DAHSEAYE',
+				'../../assets/music/emocoes_sentimentos/tukano_dahseaye_medo.wav',
+				['kuire'],
+				'TUYUKA',
+				'../../assets/music/emocoes_sentimentos/tukano_tuyuka_medo.wav',
+				buildDefault
+			);
+			document.getElementById("play_coragem").onclick = () => executeSounds(
+				'../../assets/images/emocoes_sentimentos/coragem.png',
+				["Wãkʉn'duhtuá"],
+				'DAHSEAYE',
+				'../../assets/music/emocoes_sentimentos/tukano_dahseaye_coragem.wav',
+				['wakũ tutuare'],
+				'TUYUKA',
+				'../../assets/music/emocoes_sentimentos/tukano_tuyuka_coragem.wav',
+				buildDefault
+			);
+			document.getElementById("play_preguica").onclick = () => executeSounds(
+				'../../assets/images/emocoes_sentimentos/preguica.png',
+				['Nɨhsiá'],
+				'DAHSEAYE',
+				'../../assets/music/emocoes_sentimentos/tukano_dahseaye_preguica.wav',
+				['sonõre'],
+				'TUYUKA',
+				'../../assets/music/emocoes_sentimentos/tukano_tuyuka_preguica.wav',
+				buildDefault
+			);
+			document.getElementById("play_calma").onclick = () => executeSounds(
+				'../../assets/images/emocoes_sentimentos/calma.png',
+				['Sotiró'],
+				'DAHSEAYE',
+				'../../assets/music/emocoes_sentimentos/tukano_dahseaye_calma.wav',
+				['tʉgeña sañore'],
+				'TUYUKA',
+				'../../assets/music/emocoes_sentimentos/tukano_tuyuka_calma.wav',
+				buildDefault
+			);
+			document.getElementById("play_gratidao").onclick = () => executeSounds(
+				'../../assets/images/emocoes_sentimentos/gratidao.png',
+				['Añu'],
+				'DAHSEAYE',
+				'../../assets/music/emocoes_sentimentos/tukano_dahseaye_gratidao.wav',
+				['ʉseni peore'],
+				'TUYUKA',
+				'../../assets/music/emocoes_sentimentos/tukano_tuyuka_gratidao.wav',
+				buildDefault
+			);
+			document.getElementById("play_fome").onclick = () => executeSounds(
+				'../../assets/images/emocoes_sentimentos/fome.png',
+				["Hʉ'a boá"],
+				'DAHSEAYE',
+				'../../assets/music/emocoes_sentimentos/tukano_dahseaye_fome.wav',
+				['hʉa boare'],
+				'TUYUKA',
+				'../../assets/music/emocoes_sentimentos/tukano_tuyuka_fome.wav',
+				buildDefault
+			);
+			document.getElementById("play_sede").onclick = () => executeSounds(
+				'../../assets/images/emocoes_sentimentos/sede.png',
+				["Ahkó'wʉa"],
+				'DAHSEAYE',
+				'../../assets/music/emocoes_sentimentos/tukano_dahseaye_sede.wav',
+				['oko wʉore'],
+				'TUYUKA',
+				'../../assets/music/emocoes_sentimentos/tukano_tuyuka_sede.wav',
+				buildDefault
+			);
+		}
+
+		buildDefault();
+
+	}
+
+</script>
+
+</html>

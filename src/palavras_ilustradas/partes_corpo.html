@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Partes do Corpo</title>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="../../style/reset.css" />
+	<link rel="stylesheet" href="../../style/styles.css" />
+</head>
+
+<body id="content">
+</body>
+<script src="../../js/audio.js"></script>
+<script>
+	window.onload = () => {
+
+		function buildDefault() {
+			document.getElementById("content").style.backgroundImage = "";
+			document.getElementById("content").innerHTML = ''
+				+ '<h1>Partes do Corpo</h1>'
+				+ '<ul>'
+				+ '<li id="play_cabeca">Cabeça</li>'
+				+ '<li id="play_ombro">Ombro</li>'
+				+ '<li id="play_joelho">Joelho</li>'
+				+ '<li id="play_mao">Mão</li>'
+				+ '<li id="play_pe">Pé</li>'
+				+ '<li id="play_bunda">Bunda</li>'
+				+ '<li id="play_braco">Braço</li>'
+				+ '<li id="play_boca">Boca</li>'
+				+ '<li id="play_olho">Olho</li>'
+				+ '<li id="play_nariz">Nariz</li>'
+				+ '</ul>';
+			document.getElementById("play_cabeca").onclick = () => executeSounds(
+				'../../assets/images/partes_corpo/cabeca.png',
+				['hajakỹ'],
+				'AWA GUAJÁ',
+				'../../assets/music/partes_corpo/tupi_awaguara_cabeca.wav',
+				['Xeakã'],
+				'MBYA',
+				'../../assets/music/partes_corpo/tupi_mbya_cabeca.wav',
+				buildDefault
+			);
+			document.getElementById("play_ombro").onclick = () => executeSounds(
+				'../../assets/images/partes_corpo/ombro.png',
+				["hajaxi'ia"],
+				'AWA GUAJÁ',
+				'../../assets/music/partes_corpo/tupi_awaguara_ombro.wav',
+				["Xeaxi'y"],
+				'MBYA',
+				'../../assets/music/partes_corpo/tupi_mbya_ombro.wav',
+				buildDefault
+			);
+			document.getElementById("play_joelho").onclick = () => executeSounds(
+				'../../assets/images/partes_corpo/joelho.png',
+				['haparanỹ'],
+				'AWA GUAJÁ',
+				'../../assets/music/partes_corpo/tupi_awaguara_joelho.wav',
+				["Xerenapy'ã"],
+				'MBYA',
+				'../../assets/music/partes_corpo/tupi_mbya_joelho.wav',
+				buildDefault
+			);
+			document.getElementById("play_mao").onclick = () => executeSounds(
+				'../../assets/images/partes_corpo/mao.png',
+				['hapoa'],
+				'AWA GUAJÁ',
+				'../../assets/music/partes_corpo/tupi_awaguara_mao.wav',
+				['Xepo'],
+				'MBYA',
+				'../../assets/music/partes_corpo/tupi_mbya_mao.wav',
+				buildDefault
+			);
+			document.getElementById("play_pe").onclick = () => executeSounds(
+				'../../assets/images/partes_corpo/pe.png',
+				['hapya'],
+				'AWA GUAJÁ',
+				'../../assets/music/partes_corpo/tupi_awaguara_pe.wav',
+				['Xepy'],
+				'MBYA',
+				'../../assets/music/partes_corpo/tupi_mbya_pe.wav',
+				buildDefault
+			);
+			document.getElementById("play_bunda").onclick = () => executeSounds(
+				'../../assets/images/partes_corpo/bunda.png',
+				["harikara'oa"],
+				'AWA GUAJÁ',
+				'../../assets/music/partes_corpo/tupi_awaguara_bunda.wav',
+				['Xerevi'],
+				'MBYA',
+				'../../assets/music/partes_corpo/tupi_mbya_bunda.wav',
+				buildDefault
+			);
+			document.getElementById("play_braco").onclick = () => executeSounds(
+				'../../assets/images/partes_corpo/braco.png',
+				['haiwa'],
+				'AWA GUAJÁ',
+				'../../assets/music/partes_corpo/tupi_awaguara_braco.wav',
+				["Xejyva"],
+				'MBYA',
+				'../../assets/music/partes_corpo/tupi_mbya_braco.wav',
+				buildDefault
+			);
+			document.getElementById("play_boca").onclick = () => executeSounds(
+				'../../assets/images/partes_corpo/boca.png',
+				["haja'oa"],
+				'AWA GUAJÁ',
+				'../../assets/music/partes_corpo/tupi_awaguara_boca.wav',
+				['Xejuru'],
+				'MBYA',
+				'../../assets/music/partes_corpo/tupi_mbya_boca.wav',
+				buildDefault
+			);
+			document.getElementById("play_olho").onclick = () => executeSounds(
+				'../../assets/images/partes_corpo/olho.png',
+				['harijaha'],
+				'AWA GUAJÁ',
+				'../../assets/music/partes_corpo/tupi_awaguara_olho.wav',
+				['Xerexa'],
+				'MBYA',
+				'../../assets/music/partes_corpo/tupi_mbya_olho.wav',
+				buildDefault
+			);
+			document.getElementById("play_nariz").onclick = () => executeSounds(
+				'../../assets/images/partes_corpo/nariz.png',
+				['hajapijawã'],
+				'AWA GUAJÁ',
+				'../../assets/music/partes_corpo/tupi_awaguara_nariz.wav',
+				['Xeapyīgua'],
+				'MBYA',
+				'../../assets/music/partes_corpo/tupi_mbya_nariz.wav',
+				buildDefault
+			);
+		}
+
+		buildDefault();
+
+	}
+
+</script>
+
+</html>

@@ -3,20 +3,28 @@
 
 <head>
 	<title>Aruak</title>
-	<meta charset="UTF-8"/>
+	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="../../style/reset.css" />
 	<link rel="stylesheet" href="../../style/styles.css" />
 	<style>
-		body {
+		#content {
 			background-image: url(../../assets/images/familias_linguisticas/ARUAK.png);
 		}
 	</style>
 </head>
 
 <body>
-	<a id="home-btn" class="navigate-btn" href="../home.html"></a>
-	<a id="goback-btn" class="navigate-btn" href="outras_familias_linguisticas.html"></a>
+	<main id="content">
+		<a id="home-btn" class="navigate-btn" href="../home.html"></a>
+		<a id="goback-btn" class="navigate-btn" href="outras_familias_linguisticas.html"></a>
+	</main>
 </body>
+
+<script>
+	localStorage.setItem('homeLocation', '../home.html');
+	localStorage.setItem('videoLocation', '../../assets/video/test.mp4');
+</script>
+<script src="../../js/idle.js"></script>
 
 </html>

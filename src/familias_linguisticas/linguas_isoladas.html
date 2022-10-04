@@ -3,7 +3,7 @@
 
 <head>
 	<title>Línguas Isoladas</title>
-	<meta charset="UTF-8"/>
+	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="../../style/reset.css" />
 	<link rel="stylesheet" href="../../style/styles.css" />
@@ -25,8 +25,16 @@
 	</style>
 </head>
 
-<body id="content">
+<body>
+	<main id="content">
+	</main>
 </body>
+
+<script>
+	localStorage.setItem('homeLocation', '../home.html');
+	localStorage.setItem('videoLocation', '../../assets/video/test.mp4');
+</script>
+<script src="../../js/idle.js"></script>
 <script src="../../js/video.js"></script>
 <script>
 	window.onload = () => {
@@ -38,11 +46,11 @@
 				+ '<span id="play_video_yaathe" class="navigate-btn"></span>'
 				+ '<span id="play_video_guato" class="navigate-btn"></span>';
 			document.getElementById("play_video_yaathe").onclick = () => executeVideo(
-				'../../assets/video/test.mp4',
+				'../../assets/video/linguas_isoladas_yaathe.mp4',
 				buildDefault
 			);
 			document.getElementById("play_video_guato").onclick = () => executeVideo(
-				'../../assets/video/test.mp4',
+				'../../assets/video/linguas_isoladas_guato.mp4',
 				buildDefault
 			);
 		}

@@ -3,12 +3,12 @@
 
 <head>
 	<title>Principal</title>
-	<meta charset="UTF-8"/>
+	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="../style/reset.css" />
 	<link rel="stylesheet" href="../style/styles.css" />
 	<style>
-		body {
+		#content {
 			background-image: url(../assets/images/home.png);
 		}
 
@@ -43,10 +43,18 @@
 </head>
 
 <body>
-	<a id="familias_linguisticas" class="navigate-btn" href="familias_linguisticas.html"></a>
-	<a id="escrita_linguas_indigenas" class="navigate-btn" href="escrita_linguas_indigenas.html"></a>
-	<a id="regioes_multilingues" class="navigate-btn" href="regioes_multilingues.html"></a>
-	<a id="palavras_ilustradas" class="navigate-btn" href="palavras_ilustradas.html"></a>
+	<main id="content">
+		<a id="familias_linguisticas" class="navigate-btn" href="familias_linguisticas.html"></a>
+		<a id="escrita_linguas_indigenas" class="navigate-btn" href="escrita_linguas_indigenas.html"></a>
+		<a id="regioes_multilingues" class="navigate-btn" href="regioes_multilingues.html"></a>
+		<a id="palavras_ilustradas" class="navigate-btn" href="palavras_ilustradas.html"></a>
+	</main>
 </body>
+
+<script>
+	localStorage.setItem('homeLocation', 'home.html');
+	localStorage.setItem('videoLocation', '../assets/video/test.mp4');
+</script>
+<script src="../js/idle.js"></script>
 
 </html>
