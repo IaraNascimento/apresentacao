@@ -43,4 +43,9 @@ bodyContent.onclick = () => {
     localStorage.setItem('idleTime', 0);
 }
 
-idleTimeLooping();
+if (localStorage.getItem('playIdle') === 'play') {
+    localStorage.setItem('playIdle', '');
+    playIdleVideo();
+} else {
+    idleTimeLooping();
+}
