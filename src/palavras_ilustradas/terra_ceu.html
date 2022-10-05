@@ -3,34 +3,100 @@
 
 <head>
 	<title>Da Terra e Do Céu</title>
-	<meta charset="UTF-8"/>
+	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="../../style/reset.css" />
 	<link rel="stylesheet" href="../../style/styles.css" />
+	<style>
+		#play_arvore,
+		#play_rio,
+		#play_nuvem,
+		#play_estrela,
+		#play_chuva,
+		#play_flor,
+		#play_pedra,
+		#play_cachoeira,
+		#play_sol,
+		#play_lua {
+			width: 335px;
+			height: 335px;
+		}
+
+		#play_arvore {
+			top: 190px;
+			left: 50px;
+		}
+
+		#play_rio {
+			top: 190px;
+			left: 420px;
+		}
+
+		#play_nuvem {
+			top: 190px;
+			left: 790px;
+		}
+
+		#play_estrela {
+			top: 190px;
+			left: 1158px;
+		}
+
+		#play_chuva {
+			top: 190px;
+			left: 1525px;
+		}
+
+		#play_flor {
+			top: 583px;
+			left: 50px;
+		}
+
+		#play_pedra {
+			top: 583px;
+			left: 420px;
+		}
+
+		#play_cachoeira {
+			top: 583px;
+			left: 790px;
+		}
+
+		#play_sol {
+			top: 583px;
+			left: 1158px;
+		}
+
+		#play_lua {
+			top: 583px;
+			left: 1525px;
+		}
+	</style>
 </head>
 
-<body id="content">
+<body>
+	<main id="content">
+	</main>
 </body>
 <script src="../../js/audio.js"></script>
 <script>
 	window.onload = () => {
 
 		function buildDefault() {
-			document.getElementById("content").style.backgroundImage = "";
+			document.getElementById("content").style.backgroundImage = "url('../../assets/images/terra_ceu/terra_ceu.png')";
 			document.getElementById("content").innerHTML = ''
-				+ '<h1>Da Terra e Do Céu</h1>'
-				+ '<ul>'
-				+ '<li id="play_arvore">Arvore</li>'
-				+ '<li id="play_rio">Rio</li>'
-				+ '<li id="play_nuvem">Nuvem</li>'
-				+ '<li id="play_estrela">Estrela</li>'
-				+ '<li id="play_chuva">Chuva</li>'
-				+ '<li id="play_flor">Flor</li>'
-				+ '<li id="play_pedra">Pedra</li>'
-				+ '<li id="play_cachoeira">Cachoeira</li>'
-				+ '<li id="play_sol">Sol</li>'
-				+ '<li id="play_lua">Lua</li>'
-				+ '</ul>';
+				+ '<a id="goback-btn" class="navigate-btn" href="../palavras_ilustradas.html"></a>'
+				+ '<a id="home-btn" class="navigate-btn" href="../home.html"></a>'
+				+ '<span class="navigate-btn" id="play_arvore"></span>'
+				+ '<span class="navigate-btn" id="play_rio"></span>'
+				+ '<span class="navigate-btn" id="play_nuvem"></span>'
+				+ '<span class="navigate-btn" id="play_estrela"></span>'
+				+ '<span class="navigate-btn" id="play_chuva"></span>'
+				+ '<span class="navigate-btn" id="play_flor"></span>'
+				+ '<span class="navigate-btn" id="play_pedra"></span>'
+				+ '<span class="navigate-btn" id="play_cachoeira"></span>'
+				+ '<span class="navigate-btn" id="play_sol"></span>'
+				+ '<span class="navigate-btn" id="play_lua"></span>';
 			document.getElementById("play_arvore").onclick = () => executeSounds(
 				'../../assets/images/terra_ceu/arvore.png',
 				['haiko'],
