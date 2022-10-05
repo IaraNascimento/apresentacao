@@ -15,9 +15,6 @@ body,
 
 body {
 	font-family: 'DidactGothic-Regular', Arial, sans-serif;
-	background-repeat: no-repeat;
-	background-position: left top;
-	background-size: cover;
 	background-color: #6C3BFF;
 }
 
@@ -85,7 +82,7 @@ li {
 
 .navigate-btn {
 	position: absolute;
-	border: 2px solid white;
+	/* border: 2px solid white; */
 	border-radius: 8px;
 	background-color: transparent;
 	display: inline-block;
@@ -95,20 +92,24 @@ li {
 	transition: all .2s ease-in-out;
 }
 
+.video-play::after {
+	content: url(../assets/images/play.png);
+	position: absolute;
+	top: 24px;
+	right: 24px;
+}
+
 .navigate-btn:active {
 	background-color: rgba(255, 255, 255, .5);
 }
 
 #closeVideo {
+	content: url(../assets/images/fechar.png);
 	position: absolute;
 	top: 16px;
 	right: 16px;
-	border: 2px solid purple;
-	color: purple;
 	display: inline-block;
 	padding: 24px;
-	background-color: white;
-	font-size: 32px;
 	z-index: 3;
 }
 
@@ -121,6 +122,9 @@ li {
 }
 
 #content {
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: cover;
 	z-index: 2;
 	animation: enterAnimated 1s;
 }
