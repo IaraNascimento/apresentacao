@@ -19,22 +19,34 @@ function executeSounds(background, firstTextList, firstSubText, firstSound, seco
 	const sound1 = document.getElementById("sound1");
 	const text2 = document.getElementById("text2");
 	const sound2 = document.getElementById("sound2");
+	sound1.addEventListener('loadedmetadata', () => {
+		localStorage.setItem('sound1Time', sound1.duration*1000);
+	});
+	sound2.addEventListener('loadedmetadata', () => {
+		localStorage.setItem('sound2Time', sound2.duration*1000);
+	});
+	const defaultDelay = 750;
+	const delay1 = defaultDelay;
 	setTimeout(() => {
 		text1.classList.add("active");
 		sound1.play();
-	}, 1000);
-	setTimeout(() => {
-		text1.classList.remove("active");
-	}, 3000);
-	setTimeout(() => {
-		text2.classList.add("active");
-		sound2.play();
-	}, 4000);
-	setTimeout(() => {
-		text2.classList.remove("active");
-	}, 6000);
-	setTimeout(() => {
-		buildDefault();
-	}, 7000);
+		const delay2 = defaultDelay + JSON.parse(localStorage.getItem('sound1Time'));
+		setTimeout(() => {
+			text1.classList.remove("active");
+		}, delay2);
+		const delay3 = delay2 + defaultDelay;
+		setTimeout(() => {
+			text2.classList.add("active");
+			sound2.play();
+		}, delay3);
+		const delay4 = delay3 + defaultDelay + JSON.parse(localStorage.getItem('sound2Time'));
+		setTimeout(() => {
+			text2.classList.remove("active");
+		}, delay4);
+		const delay5 = delay4 + defaultDelay;
+		setTimeout(() => {
+			buildDefault();
+		}, delay5);
+	}, delay1);
 }
 
