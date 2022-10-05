@@ -3,34 +3,100 @@
 
 <head>
 	<title>Animais e Plantas</title>
-	<meta charset="UTF-8"/>
+	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="../../style/reset.css" />
 	<link rel="stylesheet" href="../../style/styles.css" />
+	<style>
+		#play_cutia,
+		#play_onca,
+		#play_peixe,
+		#play_tucano,
+		#play_sapo,
+		#play_tamandua,
+		#play_gaviao,
+		#play_mandioca,
+		#play_milho,
+		#play_tabaco {
+			width: 335px;
+			height: 335px;
+		}
+
+		#play_cutia {
+			top: 190px;
+			left: 50px;
+		}
+
+		#play_onca {
+			top: 190px;
+			left: 420px;
+		}
+
+		#play_peixe {
+			top: 190px;
+			left: 790px;
+		}
+
+		#play_tucano {
+			top: 190px;
+			left: 1158px;
+		}
+
+		#play_sapo {
+			top: 190px;
+			left: 1525px;
+		}
+
+		#play_tamandua {
+			top: 583px;
+			left: 50px;
+		}
+
+		#play_gaviao {
+			top: 583px;
+			left: 420px;
+		}
+
+		#play_mandioca {
+			top: 583px;
+			left: 790px;
+		}
+
+		#play_milho {
+			top: 583px;
+			left: 1158px;
+		}
+
+		#play_tabaco {
+			top: 583px;
+			left: 1525px;
+		}
+	</style>
 </head>
 
-<body id="content">
+<body>
+	<main id="content">
+	</main>
 </body>
 <script src="../../js/audio.js"></script>
 <script>
 	window.onload = () => {
-
+		
 		function buildDefault() {
-			document.getElementById("content").style.backgroundImage = "";
+			document.getElementById("content").style.backgroundImage = "url('../../assets/images/animais_plantas/animais_plantas.png')";
 			document.getElementById("content").innerHTML = ''
-				+ '<h1>Animais e Plantas</h1>'
-				+ '<ul>'
-				+ '<li id="play_cutia">Cutia</li>'
-				+ '<li id="play_onca">Onça</li>'
-				+ '<li id="play_peixe">Peixe</li>'
-				+ '<li id="play_tucano">Tucano</li>'
-				+ '<li id="play_sapo">Sapo</li>'
-				+ '<li id="play_tamandua">Tamanduá</li>'
-				+ '<li id="play_gaviao">Gavião</li>'
-				+ '<li id="play_mandioca">Mandioca</li>'
-				+ '<li id="play_milho">Milho</li>'
-				+ '<li id="play_tabaco">Tabaco</li>'
-				+ '</ul>';
+				+ '<a id="goback-btn" class="navigate-btn" href="../palavras_ilustradas.html"></a>'
+				+ '<a id="home-btn" class="navigate-btn" href="../home.html"></a>'
+				+ '<span class="navigate-btn" id="play_cutia"></span>'
+				+ '<span class="navigate-btn" id="play_onca"></span>'
+				+ '<span class="navigate-btn" id="play_peixe"></span>'
+				+ '<span class="navigate-btn" id="play_tucano"></span>'
+				+ '<span class="navigate-btn" id="play_sapo"></span>'
+				+ '<span class="navigate-btn" id="play_tamandua"></span>'
+				+ '<span class="navigate-btn" id="play_gaviao"></span>'
+				+ '<span class="navigate-btn" id="play_mandioca"></span>'
+				+ '<span class="navigate-btn" id="play_milho"></span>'
+				+ '<span class="navigate-btn" id="play_tabaco"></span>';
 			document.getElementById("play_cutia").onclick = () => executeSounds(
 				'../../assets/images/animais_plantas/cutia.png',
 				['Kysóg'],

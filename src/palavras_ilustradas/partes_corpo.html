@@ -7,30 +7,96 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="../../style/reset.css" />
 	<link rel="stylesheet" href="../../style/styles.css" />
+	<style>
+		#play_cabeca,
+		#play_ombro,
+		#play_joelho,
+		#play_mao,
+		#play_pe,
+		#play_bunda,
+		#play_braco,
+		#play_boca,
+		#play_olho,
+		#play_nariz {
+			width: 335px;
+			height: 335px;
+		}
+
+		#play_cabeca {
+			top: 190px;
+			left: 50px;
+		}
+
+		#play_ombro {
+			top: 190px;
+			left: 420px;
+		}
+
+		#play_joelho {
+			top: 190px;
+			left: 790px;
+		}
+
+		#play_mao {
+			top: 190px;
+			left: 1158px;
+		}
+
+		#play_pe {
+			top: 190px;
+			left: 1525px;
+		}
+
+		#play_bunda {
+			top: 583px;
+			left: 50px;
+		}
+
+		#play_braco {
+			top: 583px;
+			left: 420px;
+		}
+
+		#play_boca {
+			top: 583px;
+			left: 790px;
+		}
+
+		#play_olho {
+			top: 583px;
+			left: 1158px;
+		}
+
+		#play_nariz {
+			top: 583px;
+			left: 1525px;
+		}
+	</style>
 </head>
 
-<body id="content">
+<body>
+	<main id="content">
+	</main>
 </body>
 <script src="../../js/audio.js"></script>
 <script>
 	window.onload = () => {
 
 		function buildDefault() {
-			document.getElementById("content").style.backgroundImage = "";
+			document.getElementById("content").style.backgroundImage = "url('../../assets/images/partes_corpo/partes_corpo.png')";
 			document.getElementById("content").innerHTML = ''
-				+ '<h1>Partes do Corpo</h1>'
-				+ '<ul>'
-				+ '<li id="play_cabeca">Cabeça</li>'
-				+ '<li id="play_ombro">Ombro</li>'
-				+ '<li id="play_joelho">Joelho</li>'
-				+ '<li id="play_mao">Mão</li>'
-				+ '<li id="play_pe">Pé</li>'
-				+ '<li id="play_bunda">Bunda</li>'
-				+ '<li id="play_braco">Braço</li>'
-				+ '<li id="play_boca">Boca</li>'
-				+ '<li id="play_olho">Olho</li>'
-				+ '<li id="play_nariz">Nariz</li>'
-				+ '</ul>';
+				+ '<a id="goback-btn" class="navigate-btn" href="../palavras_ilustradas.html"></a>'
+				+ '<a id="home-btn" class="navigate-btn" href="../home.html"></a>'
+				+ '<span class="navigate-btn" id="play_cabeca"></span>'
+				+ '<span class="navigate-btn" id="play_ombro"></span>'
+				+ '<span class="navigate-btn" id="play_joelho"></span>'
+				+ '<span class="navigate-btn" id="play_mao"></span>'
+				+ '<span class="navigate-btn" id="play_pe"></span>'
+				+ '<span class="navigate-btn" id="play_bunda"></span>'
+				+ '<span class="navigate-btn" id="play_braco"></span>'
+				+ '<span class="navigate-btn" id="play_boca"></span>'
+				+ '<span class="navigate-btn" id="play_olho"></span>'
+				+ '<span class="navigate-btn" id="play_nariz"></span>';
 			document.getElementById("play_cabeca").onclick = () => executeSounds(
 				'../../assets/images/partes_corpo/cabeca.png',
 				['hajakỹ'],

@@ -7,30 +7,96 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="../../style/reset.css" />
 	<link rel="stylesheet" href="../../style/styles.css" />
+	<style>
+		#play_cutia,
+		#play_onca,
+		#play_peixe,
+		#play_tucano,
+		#play_sapo,
+		#play_tamandua,
+		#play_gaviao,
+		#play_mandioca,
+		#play_milho,
+		#play_tabaco {
+			width: 335px;
+			height: 335px;
+		}
+
+		#play_cutia {
+			top: 190px;
+			left: 50px;
+		}
+
+		#play_onca {
+			top: 190px;
+			left: 420px;
+		}
+
+		#play_peixe {
+			top: 190px;
+			left: 790px;
+		}
+
+		#play_tucano {
+			top: 190px;
+			left: 1158px;
+		}
+
+		#play_sapo {
+			top: 190px;
+			left: 1525px;
+		}
+
+		#play_tamandua {
+			top: 583px;
+			left: 50px;
+		}
+
+		#play_gaviao {
+			top: 583px;
+			left: 420px;
+		}
+
+		#play_mandioca {
+			top: 583px;
+			left: 790px;
+		}
+
+		#play_milho {
+			top: 583px;
+			left: 1158px;
+		}
+
+		#play_tabaco {
+			top: 583px;
+			left: 1525px;
+		}
+	</style>
 </head>
 
-<body id="content">
+<body>
+	<main id="content">
+	</main>
 </body>
 <script src="../../js/audio.js"></script>
 <script>
 	window.onload = () => {
 
 		function buildDefault() {
-			document.getElementById("content").style.backgroundImage = "";
+			document.getElementById("content").style.backgroundImage = "url('../../assets/images/emocoes_sentimentos/emocoes_sentimentos.png')";
 			document.getElementById("content").innerHTML = ''
-				+ '<h1>Emoções e Sentimentos</h1>'
-				+ '<ul>'
-				+ '<li id="play_alegria">Alegria</li>'
-				+ '<li id="play_tristeza">Tristeza</li>'
-				+ '<li id="play_raiva">Raiva</li>'
-				+ '<li id="play_medo">Medo</li>'
-				+ '<li id="play_coragem">Coragem</li>'
-				+ '<li id="play_preguica">Preguiça</li>'
-				+ '<li id="play_calma">Calma</li>'
-				+ '<li id="play_gratidao">Gratidão</li>'
-				+ '<li id="play_fome">Fome</li>'
-				+ '<li id="play_sede">Sede</li>'
-				+ '</ul>';
+				+ '<a id="goback-btn" class="navigate-btn" href="../palavras_ilustradas.html"></a>'
+				+ '<a id="home-btn" class="navigate-btn" href="../home.html"></a>'
+				+ '<span id="play_alegria">Alegria</span>'
+				+ '<span id="play_tristeza">Tristeza</span>'
+				+ '<span id="play_raiva">Raiva</span>'
+				+ '<span id="play_medo">Medo</span>'
+				+ '<span id="play_coragem">Coragem</span>'
+				+ '<span id="play_preguica">Preguiça</span>'
+				+ '<span id="play_calma">Calma</span>'
+				+ '<span id="play_gratidao">Gratidão</span>'
+				+ '<span id="play_fome">Fome</span>'
+				+ '<span id="play_sede">Sede</span>';
 			document.getElementById("play_alegria").onclick = () => executeSounds(
 				'../../assets/images/emocoes_sentimentos/alegria.png',
 				["Eka'ti"],
