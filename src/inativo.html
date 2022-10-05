@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Principal</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="../style/reset.css" />
+	<link rel="stylesheet" href="../style/styles.css" />
+	<style>
+		#content {
+			background-image: url(../assets/images/home.png);
+		}
+
+		#familias_linguisticas,
+		#escrita_linguas_indigenas,
+		#regioes_multilingues,
+		#palavras_ilustradas {
+			width: 895px;
+			height: 338px;
+		}
+
+		#familias_linguisticas {
+			top: 255px;
+			left: 55px;
+		}
+
+		#escrita_linguas_indigenas {
+			top: 255px;
+			left: 968px;
+		}
+
+		#regioes_multilingues {
+			top: 635px;
+			left: 55px;
+		}
+
+		#palavras_ilustradas {
+			top: 635px;
+			left: 968px;
+		}
+	</style>
+</head>
+
+<body>
+	<main id="content">
+	</main>
+</body>
+
+<script>
+	localStorage.setItem('playIdle', 'play');
+	localStorage.setItem('homeLocation', 'home.html');
+	localStorage.setItem('videoLocation', '../assets/video/placeholder.mp4');
+</script>
+<script src="../js/idle.js"></script>
+
+</html>

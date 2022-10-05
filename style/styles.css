@@ -106,10 +106,9 @@ li {
 #closeVideo {
 	content: url(../assets/images/fechar.png);
 	position: absolute;
-	top: 16px;
-	right: 16px;
+	top: 0;
+	right: 0;
 	display: inline-block;
-	padding: 24px;
 	z-index: 3;
 }
 
