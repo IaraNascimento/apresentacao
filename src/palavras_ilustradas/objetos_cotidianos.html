@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Animais e Plantas</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="../../style/reset.css" />
+	<link rel="stylesheet" href="../../style/styles.css" />
+	<style>
+		#play_lanca,
+		#play_cocar,
+		#play_colar,
+		#play_rede,
+		#play_cesta,
+		#play_peneira,
+		#play_flecha,
+		#play_panela,
+		#play_remo,
+		#play_canoa {
+			width: 335px;
+			height: 335px;
+		}
+
+		#play_lanca {
+			top: 190px;
+			left: 50px;
+		}
+
+		#play_cocar {
+			top: 190px;
+			left: 420px;
+		}
+
+		#play_colar {
+			top: 190px;
+			left: 790px;
+		}
+
+		#play_rede {
+			top: 190px;
+			left: 1158px;
+		}
+
+		#play_cesta {
+			top: 190px;
+			left: 1525px;
+		}
+
+		#play_peneira {
+			top: 583px;
+			left: 50px;
+		}
+
+		#play_flecha {
+			top: 583px;
+			left: 420px;
+		}
+
+		#play_panela {
+			top: 583px;
+			left: 790px;
+		}
+
+		#play_remo {
+			top: 583px;
+			left: 1158px;
+		}
+
+		#play_canoa {
+			top: 583px;
+			left: 1525px;
+		}
+	</style>
+</head>
+
+<body>
+	<main id="content">
+	</main>
+</body>
+<script src="../../js/audio.js"></script>
+<script>
+	window.onload = () => {
+		
+		function buildDefault() {
+			document.getElementById("content").style.backgroundImage = "url('../../assets/images/objetos_cotidianos/objetos_cotidianos.png')";
+			document.getElementById("content").innerHTML = ''
+				+ '<a id="goback-btn" class="navigate-btn" href="../palavras_ilustradas.html"></a>'
+				+ '<a id="home-btn" class="navigate-btn" href="../home.html"></a>'
+				+ '<span class="navigate-btn" id="play_lanca"></span>'
+				+ '<span class="navigate-btn" id="play_cocar"></span>'
+				+ '<span class="navigate-btn" id="play_colar"></span>'
+				+ '<span class="navigate-btn" id="play_rede"></span>'
+				+ '<span class="navigate-btn" id="play_cesta"></span>'
+				+ '<span class="navigate-btn" id="play_peneira"></span>'
+				+ '<span class="navigate-btn" id="play_flecha"></span>'
+				+ '<span class="navigate-btn" id="play_panela"></span>'
+				+ '<span class="navigate-btn" id="play_remo"></span>'
+				+ '<span class="navigate-btn" id="play_canoa"></span>';
+			document.getElementById("play_lanca").onclick = () => executeSounds(
+				'../../assets/images/objetos_cotidianos/lanca.png',
+				['haxi'],
+				'HÃTXA KUĨ (KAXINAWA)',
+				'../../assets/music/objetos_cotidianos/pano_hatxa-kui_lanca.wav',
+				['MESTETI'],
+				'YAWANAWA',
+				'../../assets/music/objetos_cotidianos/pano_yawanawa_lanca.wav',
+				buildDefault
+			);
+			document.getElementById("play_cocar").onclick = () => executeSounds(
+				'../../assets/images/objetos_cotidianos/cocar.png',
+				['maiti'],
+				'HÃTXA KUĨ (KAXINAWA)',
+				'../../assets/music/objetos_cotidianos/pano_hatxa-kui_cocar.wav',
+				['MAITI'],
+				'YAWANAWA',
+				'../../assets/music/objetos_cotidianos/pano_yawanawa_cocar.wav',
+				buildDefault
+			);
+			document.getElementById("play_colar").onclick = () => executeSounds(
+				'../../assets/images/objetos_cotidianos/colar.png',
+				['teweti'],
+				'HÃTXA KUĨ (KAXINAWA)',
+				'../../assets/music/objetos_cotidianos/pano_hatxa-kui_colar.wav',
+				['RAUTI'],
+				'YAWANAWA',
+				'../../assets/music/objetos_cotidianos/pano_yawanawa_colar.wav',
+				buildDefault
+			);
+			document.getElementById("play_rede").onclick = () => executeSounds(
+				'../../assets/images/objetos_cotidianos/rede.png',
+				['disi'],
+				'HÃTXA KUĨ (KAXINAWA)',
+				'../../assets/music/objetos_cotidianos/pano_hatxa-kui_rede.wav',
+				["PANI"],
+				'YAWANAWA',
+				'../../assets/music/objetos_cotidianos/pano_yawanawa_rede.wav',
+				buildDefault
+			);
+			document.getElementById("play_cesta").onclick = () => executeSounds(
+				'../../assets/images/objetos_cotidianos/cesta.png',
+				['txitxa'],
+				'HÃTXA KUĨ (KAXINAWA)',
+				'../../assets/music/objetos_cotidianos/pano_hatxa-kui_cesta.wav',
+				['KUKI'],
+				'YAWANAWA',
+				'../../assets/music/objetos_cotidianos/pano_yawanawa_cesta.wav',
+				buildDefault
+			);
+			document.getElementById("play_peneira").onclick = () => executeSounds(
+				'../../assets/images/objetos_cotidianos/peneira.png',
+				['tsistati'],
+				'HÃTXA KUĨ (KAXINAWA)',
+				'../../assets/music/objetos_cotidianos/pano_hatxa-kui_peneira.wav',
+				['TXITXÃ'],
+				'YAWANAWA',
+				'../../assets/music/objetos_cotidianos/pano_yawanawa_peneira.wav',
+				buildDefault
+			);
+			document.getElementById("play_flecha").onclick = () => executeSounds(
+				'../../assets/images/objetos_cotidianos/flecha.png',
+				['txara'],
+				'HÃTXA KUĨ (KAXINAWA)',
+				'../../assets/music/objetos_cotidianos/pano_hatxa-kui_flecha.wav',
+				['PIÁ'],
+				'YAWANAWA',
+				'../../assets/music/objetos_cotidianos/pano_yawanawa_flecha.wav',
+				buildDefault
+			);
+			document.getElementById("play_panela").onclick = () => executeSounds(
+				'../../assets/images/objetos_cotidianos/panela.png',
+				['kenti'],
+				'HÃTXA KUĨ (KAXINAWA)',
+				'../../assets/music/objetos_cotidianos/pano_hatxa-kui_panela.wav',
+				['MAI KETI'],
+				'YAWANAWA',
+				'../../assets/music/objetos_cotidianos/pano_yawanawa_panela.wav',
+				buildDefault
+			);
+			document.getElementById("play_remo").onclick = () => executeSounds(
+				'../../assets/images/objetos_cotidianos/remo.png',
+				['tuwenti'],
+				'HÃTXA KUĨ (KAXINAWA)',
+				'../../assets/music/objetos_cotidianos/pano_hatxa-kui_remo.wav',
+				['SHASHU TUWETI'],
+				'YAWANAWA',
+				'../../assets/music/objetos_cotidianos/pano_yawanawa_remo.wav',
+				buildDefault
+			);
+			document.getElementById("play_canoa").onclick = () => executeSounds(
+				'../../assets/images/objetos_cotidianos/canoa.png',
+				['shashu'],
+				'HÃTXA KUĨ (KAXINAWA)',
+				'../../assets/music/objetos_cotidianos/pano_hatxa-kui_canoa.wav',
+				['SHASHU'],
+				'YAWANAWA',
+				'../../assets/music/objetos_cotidianos/pano_yawanawa_canoa.wav',
+				buildDefault
+			);
+		}
+
+		buildDefault();
+
+	}
+
+</script>
+
+</html>

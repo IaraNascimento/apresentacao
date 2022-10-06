@@ -7,30 +7,96 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="../../style/reset.css" />
 	<link rel="stylesheet" href="../../style/styles.css" />
+	<style>
+		#play_mae,
+		#play_pai,
+		#play_avo,
+		#play_avoh,
+		#play_tio_materno,
+		#play_tia_materna,
+		#play_tio_paterno,
+		#play_tia_paterna,
+		#play_sobrinho,
+		#play_sobrinha {
+			width: 335px;
+			height: 335px;
+		}
+
+		#play_mae {
+			top: 190px;
+			left: 50px;
+		}
+
+		#play_pai {
+			top: 190px;
+			left: 420px;
+		}
+
+		#play_avo {
+			top: 190px;
+			left: 790px;
+		}
+
+		#play_avoh {
+			top: 190px;
+			left: 1158px;
+		}
+
+		#play_tio_materno {
+			top: 190px;
+			left: 1525px;
+		}
+
+		#play_tia_materna {
+			top: 583px;
+			left: 50px;
+		}
+
+		#play_tio_paterno {
+			top: 583px;
+			left: 420px;
+		}
+
+		#play_tia_paterna {
+			top: 583px;
+			left: 790px;
+		}
+
+		#play_sobrinho {
+			top: 583px;
+			left: 1158px;
+		}
+
+		#play_sobrinha {
+			top: 583px;
+			left: 1525px;
+		}
+	</style>
 </head>
 
-<body id="content">
+<body>
+	<main id="content">
+	</main>
 </body>
 <script src="../../js/audio.js"></script>
 <script>
 	window.onload = () => {
 
 		function buildDefault() {
-			document.getElementById("content").style.backgroundImage = "";
+			document.getElementById("content").style.backgroundImage = "url('../../assets/images/minha_familia/minha_familia.png')";
 			document.getElementById("content").innerHTML = ''
-				+ '<h1>Minha Família</h1>'
-				+ '<ul>'
-				+ '<li id="play_mae">Mãe</li>'
-				+ '<li id="play_pai">Pai</li>'
-				+ '<li id="play_avo">Avô</li>'
-				+ '<li id="play_avoh">Avó</li>'
-				+ '<li id="play_tio_materno">Tio Materno</li>'
-				+ '<li id="play_tia_materna">Tia Materna</li>'
-				+ '<li id="play_tio_paterno">Tio Materno</li>'
-				+ '<li id="play_tia_paterna">Tia Paterna</li>'
-				+ '<li id="play_sobrinho">Sobrinho</li>'
-				+ '<li id="play_sobrinha">Sobrinha</li>'
-				+ '</ul>';
+				+ '<a id="goback-btn" class="navigate-btn" href="../palavras_ilustradas.html"></a>'
+				+ '<a id="home-btn" class="navigate-btn" href="../home.html"></a>'
+				+ '<span class="navigate-btn" id="play_mae"></span>'
+				+ '<span class="navigate-btn" id="play_pai"></span>'
+				+ '<span class="navigate-btn" id="play_avo"></span>'
+				+ '<span class="navigate-btn" id="play_avoh"></span>'
+				+ '<span class="navigate-btn" id="play_tio_materno"></span>'
+				+ '<span class="navigate-btn" id="play_tia_materna"></span>'
+				+ '<span class="navigate-btn" id="play_tio_paterno"></span>'
+				+ '<span class="navigate-btn" id="play_tia_paterna"></span>'
+				+ '<span class="navigate-btn" id="play_sobrinho"></span>'
+				+ '<span class="navigate-btn" id="play_sobrinha"></span>';
 			document.getElementById("play_mae").onclick = () => executeSounds(
 				'../../assets/images/minha_familia/mae.png',
 				['maama'],
@@ -73,62 +139,62 @@
 			);
 			document.getElementById("play_tio_materno").onclick = () => executeSounds(
 				'../../assets/images/minha_familia/tio_materno.png',
-				['iidza'],
+				['---'],
 				"YE'KWANA",
-				'../../assets/music/minha_familia/karib_yekwana_chuva.wav',
-				['Úko'],
+				'../../assets/music/minha_familia/karib_yekwana_tio_materno.wav',
+				['aawo'],
 				'MAKUXI',
-				'../../assets/music/minha_familia/karib_makuxi_chuva.wav',
+				'../../assets/music/minha_familia/karib_makuxi_tio_materno.wav',
 				buildDefault
 			);
 			document.getElementById("play_tia_materna").onclick = () => executeSounds(
 				'../../assets/images/minha_familia/tia_materna.png',
-				['hipada'],
+				['maama'],
 				"YE'KWANA",
-				'../../assets/music/minha_familia/karib_yekwana_flor.wav',
-				['Hîu'],
+				'../../assets/music/minha_familia/karib_yekwana_tia_materna.wav',
+				['maamai'],
 				'MAKUXI',
-				'../../assets/music/minha_familia/karib_makuxi_flor.wav',
+				'../../assets/music/minha_familia/karib_makuxi_tia_materna.wav',
 				buildDefault
 			);
 			document.getElementById("play_tio_paterno").onclick = () => executeSounds(
 				'../../assets/images/minha_familia/tio_paterno.png',
-				['hiipa'],
+				['faaja'],
 				"YE'KWANA",
-				'../../assets/music/minha_familia/karib_yekwana_pedra.wav',
-				["Mopô'i"],
+				'../../assets/music/minha_familia/karib_yekwana_tio_paterno.wav',
+				['paapai'],
 				'MAKUXI',
-				'../../assets/music/minha_familia/karib_makuxi_pedra.wav',
+				'../../assets/music/minha_familia/karib_makuxi_tio_paterno.wav',
 				buildDefault
 			);
 			document.getElementById("play_tia_paterna").onclick = () => executeSounds(
 				'../../assets/images/minha_familia/tia_paterna.png',
-				['kamoi'],
+				["wanhä'näi"],
 				"YE'KWANA",
-				'../../assets/music/minha_familia/karib_yekwana_cachoeira.wav',
-				['Mbokotike'],
+				'../../assets/music/minha_familia/karib_yekwana_tia_paterna.wav',
+				["wa'nî"],
 				'MAKUXI',
-				'../../assets/music/minha_familia/karib_makuxi_cachoeira.wav',
+				'../../assets/music/minha_familia/karib_makuxi_tia_paterna.wav',
 				buildDefault
 			);
 			document.getElementById("play_sobrinho").onclick = () => executeSounds(
 				'../../assets/images/minha_familia/sobrinho.png',
-				['keeri'],
+				['foonö'],
 				"YE'KWANA",
-				'../../assets/music/minha_familia/karib_yekwana_sol.wav',
-				['Káxe'],
+				'../../assets/music/minha_familia/karib_yekwana_sobrinho.wav',
+				["unwa'nîpi"],
 				'MAKUXI',
-				'../../assets/music/minha_familia/karib_makuxi_sol.wav',
+				'../../assets/music/minha_familia/karib_makuxi_sobrinho.wav',
 				buildDefault
 			);
 			document.getElementById("play_sobrinha").onclick = () => executeSounds(
 				'../../assets/images/minha_familia/sobrinha.png',
-				['liiwi'],
+				['fasse'],
 				"YE'KWANA",
-				'../../assets/music/minha_familia/karib_yekwana_lua.wav',
-				['Kohê'],
+				'../../assets/music/minha_familia/karib_yekwana_sobrinha.wav',
+				['paase'],
 				'MAKUXI',
-				'../../assets/music/minha_familia/karib_makuxi_lua.wav',
+				'../../assets/music/minha_familia/karib_makuxi_sobrinha.wav',
 				buildDefault
 			);
 		}

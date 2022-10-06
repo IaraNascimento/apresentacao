@@ -8,66 +8,66 @@
 	<link rel="stylesheet" href="../../style/reset.css" />
 	<link rel="stylesheet" href="../../style/styles.css" />
 	<style>
-		#play_cutia,
-		#play_onca,
-		#play_peixe,
-		#play_tucano,
-		#play_sapo,
-		#play_tamandua,
-		#play_gaviao,
-		#play_mandioca,
-		#play_milho,
-		#play_tabaco {
+		#play_alegria,
+		#play_tristeza,
+		#play_raiva,
+		#play_medo,
+		#play_coragem,
+		#play_preguica,
+		#play_calma,
+		#play_gratidao,
+		#play_fome,
+		#play_sede {
 			width: 335px;
 			height: 335px;
 		}
 
-		#play_cutia {
+		#play_alegria {
 			top: 190px;
 			left: 50px;
 		}
 
-		#play_onca {
+		#play_tristeza {
 			top: 190px;
 			left: 420px;
 		}
 
-		#play_peixe {
+		#play_raiva {
 			top: 190px;
 			left: 790px;
 		}
 
-		#play_tucano {
+		#play_medo {
 			top: 190px;
 			left: 1158px;
 		}
 
-		#play_sapo {
+		#play_coragem {
 			top: 190px;
 			left: 1525px;
 		}
 
-		#play_tamandua {
+		#play_preguica {
 			top: 583px;
 			left: 50px;
 		}
 
-		#play_gaviao {
+		#play_calma {
 			top: 583px;
 			left: 420px;
 		}
 
-		#play_mandioca {
+		#play_gratidao {
 			top: 583px;
 			left: 790px;
 		}
 
-		#play_milho {
+		#play_fome {
 			top: 583px;
 			left: 1158px;
 		}
 
-		#play_tabaco {
+		#play_sede {
 			top: 583px;
 			left: 1525px;
 		}
@@ -87,16 +87,16 @@
 			document.getElementById("content").innerHTML = ''
 				+ '<a id="goback-btn" class="navigate-btn" href="../palavras_ilustradas.html"></a>'
 				+ '<a id="home-btn" class="navigate-btn" href="../home.html"></a>'
-				+ '<span id="play_alegria">Alegria</span>'
-				+ '<span id="play_tristeza">Tristeza</span>'
-				+ '<span id="play_raiva">Raiva</span>'
-				+ '<span id="play_medo">Medo</span>'
-				+ '<span id="play_coragem">Coragem</span>'
-				+ '<span id="play_preguica">Preguiça</span>'
-				+ '<span id="play_calma">Calma</span>'
-				+ '<span id="play_gratidao">Gratidão</span>'
-				+ '<span id="play_fome">Fome</span>'
-				+ '<span id="play_sede">Sede</span>';
+				+ '<span class="navigate-btn" id="play_alegria"></span>'
+				+ '<span class="navigate-btn" id="play_tristeza"></span>'
+				+ '<span class="navigate-btn" id="play_raiva"></span>'
+				+ '<span class="navigate-btn" id="play_medo"></span>'
+				+ '<span class="navigate-btn" id="play_coragem"></span>'
+				+ '<span class="navigate-btn" id="play_preguica"></span>'
+				+ '<span class="navigate-btn" id="play_calma"></span>'
+				+ '<span class="navigate-btn" id="play_gratidao"></span>'
+				+ '<span class="navigate-btn" id="play_fome"></span>'
+				+ '<span class="navigate-btn" id="play_sede"></span>';
 			document.getElementById("play_alegria").onclick = () => executeSounds(
 				'../../assets/images/emocoes_sentimentos/alegria.png',
 				["Eka'ti"],
