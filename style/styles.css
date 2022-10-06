@@ -32,7 +32,7 @@ li {
 }
 
 #play-list {
-	padding-top: 300px;
+	padding-top: 260px;
 	padding-left: 180px;
 }
 
@@ -47,11 +47,11 @@ li {
 }
 
 #text2 {
-	padding-top: 120px;
+	padding-top: 80px;
 }
 
 .audio-title {
-	font-size: 160px;
+	font-size: 175px;
 	font-weight: 600;
 }
 
